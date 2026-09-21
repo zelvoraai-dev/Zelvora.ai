@@ -1,6 +1,8 @@
 {
-  "name": "Zelvora.AI – Technology & Automation Studio",
+  "name": "Zelvora.AI",
   "description": "Zelvora creates AI-powered automation, websites, internal tools, WhatsApp systems, and lead-generation infrastructure for businesses that want to work smarter and grow faster.",
   "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
 }
