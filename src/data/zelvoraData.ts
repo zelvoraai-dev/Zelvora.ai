@@ -299,6 +299,7 @@ export const PROBLEM_SOLUTIONS: SolutionOption[] = [
     timeline: '2 to 3 weeks to live pipeline',
     deliverablesSummary: 'Fully configured outbound engine + 2,000 verified target leads + real-time qualification funnel.',
     ctaText: 'Deploy Lead Engine',
+    suggestedCaseStudyIds: ['zelvora-pulse', 'omniflow-prototype'],
   },
   {
     id: 'automate-business',
@@ -315,6 +316,7 @@ export const PROBLEM_SOLUTIONS: SolutionOption[] = [
     timeline: '3 to 4 weeks implementation',
     deliverablesSummary: 'End-to-end automation workflow mapping, custom middleware, error monitoring, and staff training.',
     ctaText: 'Map My Automations',
+    suggestedCaseStudyIds: ['apex-logistics', 'docuparse-ai'],
   },
   {
     id: 'need-website',
@@ -331,6 +333,7 @@ export const PROBLEM_SOLUTIONS: SolutionOption[] = [
     timeline: '2 to 4 weeks depending on scope',
     deliverablesSummary: 'Custom responsive website, custom CMS controls, Google Analytics 4 integration, and hosting setup.',
     ctaText: 'Build Modern Website',
+    suggestedCaseStudyIds: ['veloce-commerce', 'strata-fintech'],
   },
   {
     id: 'whatsapp-automation',
@@ -347,6 +350,7 @@ export const PROBLEM_SOLUTIONS: SolutionOption[] = [
     timeline: '1 to 2 weeks',
     deliverablesSummary: 'Verified WhatsApp Business API deployment, trained AI agent, CRM sync, and team dashboard.',
     ctaText: 'Automate WhatsApp',
+    suggestedCaseStudyIds: ['aura-clinics', 'apex-logistics'],
   },
   {
     id: 'custom-software',
@@ -363,6 +367,7 @@ export const PROBLEM_SOLUTIONS: SolutionOption[] = [
     timeline: '4 to 8 weeks for robust MVP',
     deliverablesSummary: 'Production-ready codebase, complete architecture documentation, test coverage, and cloud handover.',
     ctaText: 'Engineer Custom Software',
+    suggestedCaseStudyIds: ['veloce-commerce', 'nexuscrm-bridge'],
   },
   {
     id: 'not-sure-yet',
@@ -379,6 +384,7 @@ export const PROBLEM_SOLUTIONS: SolutionOption[] = [
     timeline: '48-hour assessment turnaround',
     deliverablesSummary: 'Comprehensive Systems Feasibility Blueprint with prioritized ROI matrix and implementation options.',
     ctaText: 'Schedule Architecture Audit',
+    suggestedCaseStudyIds: ['apex-logistics', 'zelvora-pulse'],
   },
 ];
 
@@ -713,6 +719,58 @@ export const PORTFOLIO_PROJECTS: ProjectCaseStudy[] = [
     ],
     tags: ['Internal Studio Engine', 'Lead Generation', 'Data Enrichment', 'Proprietary IP'],
     demoType: 'diagram',
+  },
+  {
+    id: 'strata-fintech',
+    title: 'Strata Capital: High-Performance Investor Portal & Acquisition Pipeline',
+    category: 'Real Client',
+    clientName: 'Strata Capital Partners',
+    industry: 'Private Equity & Asset Management',
+    serviceId: 'websites-internal-tools',
+    headline: 'Replacing email attachments and static spreadsheets with a bank-grade client portal and dynamic deal room.',
+    problem:
+      'High-net-worth investors were delayed in deal allocations due to manual document signing, unencrypted email PDFs, and disconnected wire instructions.',
+    solution:
+      'Architected a lightning-fast React & TypeScript portal with role-based document access, live portfolio telemetry, and instant WhatsApp status notifications.',
+    architecture: [
+      'Next.js / React 19 Frontend with Tailwind CSS',
+      'Role-Based Access Control (RBAC) & Document Watermarking',
+      'Encrypted PostgreSQL Database & Audit Ledger',
+      'Meta WhatsApp Business API Status Alerts',
+    ],
+    results: [
+      { label: 'Lighthouse Performance', metric: '99/100' },
+      { label: 'Investor Onboarding Speed', metric: 'Under 10 Mins' },
+      { label: 'Client Satisfaction', metric: '100% CSAT' },
+    ],
+    tags: ['Websites & Tools', 'Client Portal', 'Fintech', 'Next.js', 'WhatsApp'],
+    demoType: 'live',
+  },
+  {
+    id: 'nexuscrm-bridge',
+    title: 'Nexus Enterprise: High-Throughput ERP & Webhook Integration Middleware',
+    category: 'Real Client',
+    clientName: 'Nexus Global Distribution',
+    industry: 'Enterprise Software & Supply Chain',
+    serviceId: 'freelance-development',
+    headline: 'Connecting legacy on-premise inventory systems to modern cloud CRMs with sub-100ms sync latency.',
+    problem:
+      'Frequent inventory sync failures between legacy Oracle databases and modern Salesforce instances caused double-selling and manual reconciliation.',
+    solution:
+      'Engineered an event-driven Go/TypeScript middleware layer with idempotent webhooks, automated dead-letter queues, and real-time failure telemetry.',
+    architecture: [
+      'Stateless TypeScript / Node.js Microservices',
+      'Redis Distributed In-Memory Queue',
+      'Bi-directional Salesforce & Oracle DB Connectors',
+      'Automated PagerDuty & Slack Incident Webhooks',
+    ],
+    results: [
+      { label: 'Sync Latency', metric: '< 85ms' },
+      { label: 'Data Discrepancy Rate', metric: '0.00%' },
+      { label: 'Monthly Uptime', metric: '99.99%' },
+    ],
+    tags: ['Custom Software', 'API Integration', 'Microservices', 'Enterprise ERP'],
+    demoType: 'live',
   },
 ];
 

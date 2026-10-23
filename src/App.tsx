@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Analytics } from '@vercel/analytics/react';
 import { ThemeProvider } from './context/ThemeContext';
 import { Navbar } from './components/Navbar';
 import { HeroSection } from './components/HeroSection';
@@ -86,10 +87,11 @@ export default function App() {
           {/* 3. The Connected Systems Ecosystem */}
           <SystemsSection />
 
-          {/* 4. Problem-First Solutions Diagnostic */}
+          {/* 4. Problem-First Solutions Selector */}
           <SolutionsSection
             onSelectSolutionToInquire={handleSelectSolutionToInquire}
             onExploreService={handleSelectServiceModal}
+            onSelectProjectRef={handleStartProjectWithRef}
           />
 
           {/* 5. Realistic Production Use Cases */}
@@ -131,6 +133,9 @@ export default function App() {
           onSelectDepartmentToInquire={handleInquireService}
           onSwitchDepartment={(newId) => setActiveModalServiceId(newId)}
         />
+
+        {/* Vercel Analytics */}
+        <Analytics />
       </div>
     </ThemeProvider>
   );

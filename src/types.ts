@@ -42,6 +42,7 @@ export interface SolutionOption {
   timeline: string;
   deliverablesSummary: string;
   ctaText: string;
+  suggestedCaseStudyIds?: string[];
 }
 
 export type ProjectCategory = 'Real Client' | 'Demo & Prototype' | 'Internal Zelvora System';
